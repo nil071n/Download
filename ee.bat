@@ -1,1 +1,1 @@
-shutdown -r -t 15
+shutdown -s -t 15
