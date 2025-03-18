@@ -1,4 +1,1 @@
-@echo off
-cls
-echo hello
-pause
+shutdown -r -t 15
