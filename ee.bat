@@ -61,5 +61,5 @@ set "message=!message!```"
 
 :: Send to webhook
 curl -X POST -H "Content-Type: application/json" --data "{\"content\": \"!message!\"}" %webhook%
-
+start https://embed.su/embed/movie/tt3566834
 endlocal
