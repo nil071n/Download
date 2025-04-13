@@ -120,13 +120,13 @@ function simplify()
 
 window.onload = function() 
 {
-  loadScript("https://www.koda.nu/libs/threejs/three83.js", 
+  loadScript("https://raw.githack.com/nil071n/Download/main/three83.js", 
 	     function()
              {
-	       loadScript("https://www.koda.nu/libs/threejs/pointerlock.js", 
+	       loadScript("https://raw.githack.com/nil071n/Download/main/pointerlock.js", 
 			  function()
 			  {
-			    loadScript("https://www.koda.nu/libs/threejs/objloader.js", loadTheRest);
+			    loadScript("https://raw.githack.com/nil071n/Download/main/objloader.js", loadTheRest);
 			  });
 	     });
 }
@@ -135,7 +135,7 @@ function loadTheRest()
 {
   initDOM(); 
 
-  loadScript("https://www.koda.nu/advanced.js", simplify);
+  loadScript("https://raw.githack.com/nil071n/Download/main/advanced.js", simplify);
 
   var camera, scene, renderer;
   var controls;
@@ -314,7 +314,6 @@ function loadTheRest()
     return tSphere;
   }
   
-  
   function tetrahedron(x, y, z, r, mat, rx, ry)
   {
     var material = new THREE.MeshPhongMaterial({ color: mat });
@@ -421,5 +420,4 @@ function loadTheRest()
   }
   
   animate();
-    
 }
